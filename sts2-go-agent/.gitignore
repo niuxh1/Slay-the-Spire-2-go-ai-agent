@@ -1,0 +1,14 @@
+# Binaries
+/sts2-go-agent/STS2-Agent-Pro.exe
+/sts2-go-agent/test.exe
+
+# Local Config
+/sts2-go-agent/sts2_config.json
+/sts2-go-agent/.env
+
+# Dependencies
+/sts2-go-agent/vendor/
+
+# OS files
+.DS_Store
+Thumbs.db

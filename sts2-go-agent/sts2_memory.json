@@ -1,0 +1,14 @@
+{
+  "lessons": [
+    "ALWAYS submit the exact live API command with all required numeric parameters from the current screen; DO NOT use card names, omit target_index for targeted cards, or output any non-executable format.",
+    "ALWAYS, when the screen shows exactly one playable meaningful card, submit that exact live API command with every required numeric parameter immediately (including target_index if needed); DO NOT output anything non-executable, omit parameters, or choose end_turn while that card remains playable.",
+    "ALWAYS verify that the exact action is both listed and currently valid for a live selectable index on the screen, and when using discard_potion, include the correct discardable option_index from the current state; DO NOT guess, omit parameters, or target a non-discardable potion.",
+    "ALWAYS submit select_deck_card with the exact numeric option_index from the current CARD_SELECTION screen; DO NOT omit required parameters or send a bare action name.",
+    "ALWAYS submit exactly one action that is explicitly listed and supported on the current screen in its exact live API syntax; DO NOT assume a standard command like end_turn() is executable unless the live interface actually accepts it.",
+    "ALWAYS use the exact live executable action syntax the interface accepts for the current screen, and DO NOT assume a standard wrapper like end_turn() is valid just because the action name appears in Available Action Names.",
+    "ALWAYS submit exactly one action in the exact live API executable syntax shown for the current screen, including parentheses (for example, `continue_run()`), and DO NOT send bare action names.",
+    "ALWAYS submit exactly one action in the exact live API executable syntax shown for the current screen, including all required parentheses and parameters, and DO NOT attempt a listed action unless its exact executable form is valid in the current live state.",
+    "DO NOT execute an action just because its name appears in Available Action Names; ALWAYS verify that the exact command is currently supported by the live API before submitting it.",
+    "DO NOT convert an Available Action Name into a parenthesized executable command unless the live interface explicitly confirms that exact syntax is supported; ALWAYS verify the exact currently accepted live command before submitting any MAIN_MENU action."
+  ]
+}
